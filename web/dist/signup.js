@@ -7,7 +7,7 @@ function signup()
     var pass = document.forms["datos"].elements[2].value;
 
 
-    var data = {id:user,nombre:nombre,pass:pass}
+    var data = {user:user,nombre:nombre,pass:pass}
     const Http = new XMLHttpRequest();
     Http.open("POST",`http://34.70.8.211:5000/addUser`, true);
     Http.setRequestHeader("Content-Type", "application/json");
