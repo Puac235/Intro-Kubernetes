@@ -1,0 +1,14 @@
+version: '3'
+services:
+    database:
+        image: 'mongo'
+        container_name: 'DBSemi'
+        environment: 
+            - MONGO_INITDB_DATABASE=dbSemi
+            - MONGO_INITDB_ROOT_USERNAME=puac
+            - MONGO_INITDB_ROOT_PASSWORD=1234
+        volumes: 
+            - ./init-mongo.js:/docker-entrypoint-initdb.d/init/mongo.js:ro
+            - ./mongo-volume:/data/db
+        ports:
+            - '27017:27017'
