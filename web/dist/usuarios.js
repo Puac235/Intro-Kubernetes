@@ -7,7 +7,7 @@ function ObtenerUsuarios()
     document.getElementById('usuario').innerHTML = localStorage.getItem('user');
     alumnos = [];
     const Http = new XMLHttpRequest();
-    Http.open("GET",`http://:5000/getUsers`, true);
+    Http.open("GET",`http://34.70.8.211:5000/getUsers`, true);
     Http.setRequestHeader("Content-Type", "application/json");
     Http.send();
     Http.onreadystatechange=function(){

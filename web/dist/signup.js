@@ -11,7 +11,7 @@ function signup()
         console.log(imagen)
         var data = {id:user, pass:pass, image:imagen}
         const Http = new XMLHttpRequest();
-        Http.open("POST",`http://:5000/addUser`, true);
+        Http.open("POST",`http://34.70.8.211:5000/addUser`, true);
         Http.setRequestHeader("Content-Type", "application/json");
         console.log(data);
         Http.send(JSON.stringify(data));

@@ -6,7 +6,7 @@ function login()
 
     var data = {user:user, pass:pass}
     const Http = new XMLHttpRequest();
-    Http.open("GET",`http://:5000/login`, true);
+    Http.open("GET",`http://34.70.8.211:5000/login`, true);
     Http.setRequestHeader("Content-Type", "application/json");
     Http.send(JSON.stringify(data));
     Http.onreadystatechange=function(){
