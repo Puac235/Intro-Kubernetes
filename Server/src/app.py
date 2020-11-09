@@ -20,7 +20,7 @@ CORS(app)
 socket = SocketIO(app, cors_allowed_origins="*")
 
 #myclient = MongoClient('mongodb://'+ os.environ['MONGODB_HOSTNAME'] +':27017/',username = 'puac', password = '1234' )
-myclient = MongoClient('mongodb://10.0.1.42:27017/',username = 'puac', password = '1234' )
+myclient = MongoClient('mongodb://3.128.28.97:27017/',username = 'puac', password = '1234' )
 mydb = myclient["dbSemi"]
 
 
