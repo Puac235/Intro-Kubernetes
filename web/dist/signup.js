@@ -3,10 +3,11 @@ var imagen;
 function signup() 
 {
     var user = document.forms["datos"].elements[0].value;
-    var pass = document.forms["datos"].elements[1].value;
+    var nombre = document.forms["datos"].elements[1].value;
+    var pass = document.forms["datos"].elements[2].value;
 
 
-    var data = {id:user, pass:pass}
+    var data = {id:user,nombre:nombre,pass:pass}
     const Http = new XMLHttpRequest();
     Http.open("POST",`http://34.70.8.211:5000/addUser`, true);
     Http.setRequestHeader("Content-Type", "application/json");
