@@ -1,0 +1,13 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "Contenedor con Node",
+  "author": "Sebas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
