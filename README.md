@@ -1,6 +1,3 @@
-# SO1-FINAL
-
-##201700342
-##José Francisco Puac Ixcamparic
+# Intro-Kubernetes
 
 Creación de réplicas de múltiples servicios utilizando Kubernetes.
